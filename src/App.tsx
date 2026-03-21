@@ -38,9 +38,39 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-slate-800 selection:bg-emerald-200 selection:text-emerald-900">
+      {/* SEO Optimized Header */}
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm transition-all duration-300">
+        <div className="container mx-auto px-4 h-20 flex items-center justify-between">
+          {/* Logo / Brand */}
+          <a href="/" className="flex items-center gap-2 text-slate-900 hover:text-emerald-600 transition-colors" aria-label="Inicio - Reformas San Martín de Valdeiglesias">
+            <Hammer className="text-emerald-600" size={28} />
+            <span className="font-bold text-xl tracking-tight hidden sm:block">Reformas SMV</span>
+            <span className="font-bold text-xl tracking-tight sm:hidden">RSMV</span>
+          </a>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center gap-8" aria-label="Navegación principal">
+            <a href="#servicios" className="text-sm font-semibold text-slate-600 hover:text-emerald-600 transition-colors">Servicios</a>
+            <a href="#proyectos" className="text-sm font-semibold text-slate-600 hover:text-emerald-600 transition-colors">Proyectos</a>
+            <a href="#opiniones" className="text-sm font-semibold text-slate-600 hover:text-emerald-600 transition-colors">Opiniones</a>
+            <a href="#faq" className="text-sm font-semibold text-slate-600 hover:text-emerald-600 transition-colors">FAQ</a>
+          </nav>
+
+          {/* CTA Button */}
+          <div className="flex items-center gap-4">
+            <a href="#contacto" className="hidden sm:flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2.5 rounded-full font-bold text-sm transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5" aria-label="Solicitar presupuesto gratis para reformas">
+              Solicitar presupuesto gratis
+            </a>
+            <a href="#contacto" className="sm:hidden flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-full font-bold text-sm transition-all shadow-md" aria-label="Solicitar presupuesto gratis">
+              Presupuesto
+            </a>
+          </div>
+        </div>
+      </header>
+
       <main>
         {/* Hero Section */}
-        <section className="relative bg-slate-50 pt-24 pb-16 md:pt-36 md:pb-32 overflow-hidden border-b border-slate-200">
+        <section className="relative bg-slate-50 pt-32 pb-16 md:pt-40 md:pb-32 overflow-hidden border-b border-slate-200">
           {/* Decorative background elements */}
           <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none">
             <div className="absolute -top-[20%] -right-[10%] w-[70%] h-[70%] rounded-full bg-emerald-200/20 blur-3xl"></div>
@@ -278,7 +308,7 @@ export default function App() {
         </section>
 
         {/* Nuestros Servicios */}
-        <section className="py-16 md:py-24 bg-slate-50 border-t border-slate-200">
+        <section id="servicios" className="py-16 md:py-24 bg-slate-50 border-t border-slate-200">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="text-center mb-16 max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6 tracking-tight">
@@ -372,7 +402,7 @@ export default function App() {
         </section>
 
         {/* Proyectos Realizados / Antes y Después */}
-        <section className="py-16 md:py-24 bg-white">
+        <section id="proyectos" className="py-16 md:py-24 bg-white">
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="text-center mb-16 max-w-3xl mx-auto">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-100/80 text-emerald-800 font-semibold text-sm mb-6 border border-emerald-200/50">
@@ -487,7 +517,7 @@ export default function App() {
         </section>
 
         {/* Testimonios / Reviews */}
-        <section className="py-16 md:py-24 bg-white border-t border-slate-200">
+        <section id="opiniones" className="py-16 md:py-24 bg-white border-t border-slate-200">
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="text-center mb-16 max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6 tracking-tight">
@@ -620,7 +650,7 @@ export default function App() {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-16 md:py-24 bg-slate-50 border-y border-slate-200">
+        <section id="faq" className="py-16 md:py-24 bg-slate-50 border-y border-slate-200">
           <div className="container mx-auto px-4 max-w-4xl">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 tracking-tight">
