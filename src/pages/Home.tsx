@@ -814,6 +814,8 @@ export default function Home() {
                 ) : (
                   <form onSubmit={handleSubmit} className="relative z-10 space-y-6">
                     <input type="hidden" name="access_key" value="2ea846be-9eb7-46f7-884e-430c4d1a0347" />
+                    <input type="hidden" name="subject" value="Nuevo contacto desde la web de Reformas San Martín de Valdeiglesias" />
+                    <input type="hidden" name="from_name" value="Web Reformas San Martín" />
                     
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium text-slate-300 mb-2">Nombre completo</label>
