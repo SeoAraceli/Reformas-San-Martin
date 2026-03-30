@@ -12,10 +12,8 @@ export default function ReformasCocinas() {
         <title>Reformas de Cocinas en San Martín de Valdeiglesias | Presupuesto Gratis</title>
         <meta name="description" content="Especialistas en reformas de cocinas en San Martín de Valdeiglesias. Diseños a medida, muebles, fontanería y electricidad. Pide presupuesto sin compromiso." />
         <meta name="keywords" content="reformas de cocinas San Martín de Valdeiglesias, reformar cocina, muebles de cocina, diseño de cocinas, reformas integrales cocinas" />
-        <link rel="canonical" href="https://reformassanmartindevaldeiglesias.reformas.org.es/reformas-de-cocinas-san-martin-de-valdeiglesias" />
         <meta property="og:title" content="Reformas de Cocinas en San Martín de Valdeiglesias | Presupuesto Gratis" />
         <meta property="og:description" content="Especialistas en reformas de cocinas en San Martín de Valdeiglesias. Diseños a medida, muebles, fontanería y electricidad. Pide presupuesto sin compromiso." />
-        <meta property="og:url" content="https://reformassanmartindevaldeiglesias.reformas.org.es/reformas-de-cocinas-san-martin-de-valdeiglesias" />
         <meta property="og:type" content="website" />
       </Helmet>
 

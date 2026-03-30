@@ -60,7 +60,6 @@ export default function Home() {
       <Helmet>
         <title>Reformas San Martín de Valdeiglesias | Presupuesto Gratis</title>
         <meta name="description" content="Empresa de reformas integrales en San Martín de Valdeiglesias. Especialistas en baños, cocinas y locales comerciales. Calidad garantizada." />
-        <link rel="canonical" href="https://reformassanmartindevaldeiglesias.reformas.org.es/" />
       </Helmet>
 
       <Header />
@@ -85,9 +84,9 @@ export default function Home() {
                 
                 {/* EXACT H1 AS REQUESTED */}
                 <h1 className="mb-6 leading-tight">
-                  <a href="https://reformassanmartindevaldeiglesias.reformas.org.es" rel="dofollow" className="text-slate-900 font-bold text-4xl md:text-6xl no-underline hover:text-slate-700 transition-colors">
+                  <span className="text-slate-900 font-bold text-4xl md:text-6xl no-underline hover:text-slate-700 transition-colors">
                     Reformas San Martín de Valdeiglesias
-                  </a>
+                  </span>
                 </h1>
                 
                 <p className="text-lg md:text-xl text-slate-600 leading-relaxed mb-10">
@@ -761,16 +760,6 @@ export default function Home() {
                     <div className="pt-1">
                       <h4 className="font-bold text-slate-900 text-lg mb-1">Teléfono</h4>
                       <p className="text-slate-600">640 839 282</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start space-x-5">
-                    <div className="bg-slate-50 p-4 rounded-2xl text-emerald-600 shrink-0 border border-slate-100 shadow-sm">
-                      <Mail size={28} />
-                    </div>
-                    <div className="pt-1">
-                      <h4 className="font-bold text-slate-900 text-lg mb-1">Email</h4>
-                      <p className="text-slate-600">info@reformassanmartindevaldeiglesias.reformas.org.es</p>
                     </div>
                   </div>
                 </div>
